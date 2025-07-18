@@ -4,7 +4,7 @@ FROM public.ecr.aws/lambda/python:3.12
 COPY testing.txt ${LAMBDA_TASK_ROOT}
 
 # Install the specified packages
-RUN pip install -r requirements.txt
+RUN pip install -r testing.txt
 
 # Copy function code
 COPY app.py ${LAMBDA_TASK_ROOT}
