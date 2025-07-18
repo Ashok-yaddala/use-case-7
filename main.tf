@@ -10,7 +10,7 @@ module "iam" {
 module "lambda" {
     source = "./modules/lambda"
     function_name = "helloworldtest"
-    image_uri  = "144317819575.dkr.ecr.eu-west-1.amazonaws.com/first:latest"
+    image_uri  = "173003893026.dkr.ecr.ap-south-1.amazonaws.com/myrepo:latest"
     role_arn = module.iam.role_arn
 }
 
